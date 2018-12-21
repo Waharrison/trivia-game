@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/background2.jpg);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+  
+}
+
+.jumbotron {
+    width: 960px;
+
+}
+#startButton {
+    text-align: center;
+}
+
+.container {
+    background: darkgrey;
+    width: 960px;
+    height: 100%;
+    padding: 20px;
+    color: black;
+}
+
+.header {
+    font-size: 48px;
+    padding: 40px;
+    text-align: center;
+}
+
+#timer {
+    text-align:center;
+    font-size: 24px;
+}
+
+#answer1 {
+    text-align: center;
+}
+#question1 {
+    text-align: center;
+}
+
+#question2 {
+    text-align: center;
+}
+#answer2 {
+    text-align: center;
+}
+#question3 {
+    text-align: center;
+}
+#answer3 {
+    text-align: center;
+}
+#question4 {
+    text-align: center;
+}
+#answer4 {
+    text-align: center;
+}
+#question5 {
+    text-align: center;
+}
+#answer5 {
+    text-align: center;
+}
+#finishedbutton {
+    text-align:right;
+}
+
+.runOutofTimeResults {
+    text-align: center;
+}
+
+.SubmitAnswerResults {
+    text-align: center;
+}

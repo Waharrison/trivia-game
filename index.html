@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="header">The Trivia Game</h1>
+            </div>
+            <div class="jumbotron">
+                <p id="startButton"><button type="button" class="btn btn-default btn-lg btn-primary strtbutton">START</button></p>
+                
+            </div>
+            <br>
+                <br>
+        </div>
+        <div class="questionContainer" style="display: none">
+            <p id="timer"><strong>Time Remaining: <span id="show-number"></span> seconds</strong> </p>
+
+            <h1 id="question1"></h1>
+            <p id="answer1">
+                <input type="radio" name="questionnumber1" value="0" id="parks&recreation">
+                <label for="parks&recreation">Parks & Recreation</label>
+                <input type="radio" name="questionnumber1" value="0" id="30rock">
+                <label for="30rock">30 Rock</label>
+                <input type="radio" name="questionnumber1" value="1" id="theoffice">
+                <label for="theoffice">The Office</label>
+                <input type="radio" name="questionnumber1" value="0" id="friends">
+                <label for="friends">Friends</label></p>
+            <h1 id="question2"></h1>
+            <p id="answer2">
+                <input type="radio" name="questionnumber2" value="1" id="parks&recreation2">
+                <label for="parks&recreation2">Parks & Recreation</label>
+                <input type="radio" name="questionnumber2" value="0" id="30rock2">
+                <label for="30rock2">30 Rock</label>
+                <input type="radio" name="questionnumber2" value="0" id="theoffice2">
+                <label for="theoffice2">The Office</label>
+                <input type="radio" name="questionnumber2" value="0" id="arrested2">
+                <label for="arrested2">Arrested Development</label>
+            </p>
+
+            <h1 id="question3"></h1>
+            <p id="answer3">
+                <input type="radio" name="questionnumber3" value="0" id="newyork3">
+                <label for="newyork3">New York</label>
+                <input type="radio" name="questionnumber3" value="1" id="boston3">
+                <label for="boston3">Boston</label>
+                <input type="radio" name="questionnumber3" value="0" id="houston3">
+                <label for="houston3">Houston</label>
+                <input type="radio" name="questionnumber3" value="0" id="chicago3">
+                <label for="chicago3">Chicago</label>
+            </p>
+
+            <h1 id="question4"></h1>
+            <p id="answer4">
+                <input type="radio" name="questionnumber4" value="0" id="2001">
+                <label for="2001">2001</label>
+                <input type="radio" name="questionnumber4" value="1" id="1992">
+                <label for="1992">1992</label>
+                <input type="radio" name="questionnumber4" value="0" id="1989">
+                <label for="1989">1989</label>
+                <input type="radio" name="questionnumber4" value="0" id="1996">
+                <label for="1996">1996</label>
+            </p>
+
+            <h1 id="question5"></h1>
+            <p id="answer4">
+                <input type="radio" name="questionnumber3" value="1" id="newyork5">
+                <label for="newyork5">New York</label>
+                <input type="radio" name="questionnumber3" value="0" id="charlotte5">
+                <label for="charlotte5">Charlotte</label>
+                <input type="radio" name="questionnumber3" value="0" id="miami5">
+                <label for="miami5">Miami</label>
+                <input type="radio" name="questionnumber3" value="0" id="sandiego5">
+                <label for="sandiego5">San Diego</label>
+            </p>
+
+
+            <p id="finishedbutton"><input type="button" value="SUMBMIT"></p>
+        </div>
+
+    <div class ="SubmitAnswerResults" style= "display: none">
+       <p><strong>Your Results:</strong></p>
+        <br>
+        <div id="scoreCard">
+                <p>Correct Answers: <span id="correct">0</span></p>
+                <P>Wrong Answers: <span id="wrong">0</span></P>
+                <P>Unanswered: <span id="unanswered">0</span></P>
+            </div>
+    </div>
+    <div class= "runOutofTimeResults" style= "display:none">
+    <h1><strong>YOU RAN OUT OF TIME!</strong></h1>
+    <br>
+    <p><strong>Your Results:</strong></p>
+        <div id="scoreCard">
+                <p>Correct Answers: <span id="correct">0</span></p>
+                <P>Wrong Answers: <span id="wrong">0</span></P>
+                <P>Unanswered: <span id="unanswered">0</span></P>
+            </div>
+    </div>
+    </div>
+    </div>
+    </p>
+    </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
