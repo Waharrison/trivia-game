@@ -5,7 +5,7 @@ var wrong = 0;
 var wrongSpan = document.getElementById("wrong");
 var unanswered = 5;
 var unansweredSpan = document.getElementById("unanswered")
-var number = 60;
+var number = 30;
 var intervalId;
 
 
@@ -56,7 +56,7 @@ function decrement() {
         stop();
         showQuestions.hide(".questionContainer");
         outOfTimeResults.show(".runOutofTimeResults");
-        submitAnswer.hide(".SubmitAnswerResults")
+        submitAnswer.show(".SubmitAnswerResults")
     }
 }
 function stop() {
