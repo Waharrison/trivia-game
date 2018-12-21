@@ -3,7 +3,7 @@ var correct = 0;
 var correctSpan = document.getElementById("correct");
 var wrong = 0;
 var wrongSpan = document.getElementById("wrong");
-var unanswered = 0;
+var unanswered = 5;
 var unansweredSpan = document.getElementById("unanswered")
 var number = 60;
 var intervalId;
@@ -43,9 +43,6 @@ var submitAnswer = $(".SubmitAnswerResults")
 var outOfTimeResults = $(".runOutofTimeResults")
 
 
-// var showResults = (NEED TO MAKE A CONTAINER FOR THE RESULTS)
-// go back and look at previous homework to do a score for the questions and answers
-
 
 
 function run() {
@@ -60,33 +57,24 @@ function decrement() {
         showQuestions.hide(".questionContainer");
         outOfTimeResults.show(".runOutofTimeResults");
         submitAnswer.hide(".SubmitAnswerResults")
-
-        //create a jquery & html here to show the results page when time runs out. creat a separte result page tha says "time ran out"
     }
 }
 function stop() {
 
     clearInterval(intervalId);
 }
-
-
-
 $(document).ready(function () {
-
 
     $(".strtbutton").on("click", function () {
         showQuestions.show(".questionContainer");
         questionStart.hide(".jumbotron");
         run();
     })
-
     $("#finishedbutton").on("click", function () {
         showQuestions.hide(".questionContainer");
         submitAnswer.show(".SubmitAnswerResults")
         stop()
-        //create a jquery & html here to show the results page when submit is clicked
     });
-
     $("#question1").text(questions[0].question)
 
     $("#question2").text(questions[1].question)
@@ -97,24 +85,108 @@ $(document).ready(function () {
 
     $("#question5").text(questions[4].question)
 
-    $("input[type='radio']").click(function () {
+    $("input[name='questionnumber1']").click(function () {
         var selectedValue = $("input[name='questionnumber1']:checked").val();
 
-      
-
         if (selectedValue === "1") {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
             correct++;
             correctSpan.textContent = correct;
+
             console.log(selectedValue)
         }
-
         else {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
             wrong++
             wrongSpan.textContent = wrong;
             console.log("wrongAnswer")
         }
 
     });
+
+    $("input[name='questionnumber2']").click(function () {
+        var selectedValue = $("input[name='questionnumber2']:checked").val();
+
+
+        if (selectedValue === "1") {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            correct++;
+            correctSpan.textContent = correct;
+            console.log(selectedValue)
+        }
+
+        else {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            wrong++
+            wrongSpan.textContent = wrong;
+            console.log("wrongAnswer")
+        }
+
+    });
+
+    $("input[name='questionnumber3']").click(function () {
+        var selectedValue = $("input[name='questionnumber3']:checked").val();
+        if (selectedValue === "1") {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            correct++;
+            correctSpan.textContent = correct;
+            console.log(selectedValue)
+        }
+        else {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            wrong++
+            wrongSpan.textContent = wrong;
+            console.log("wrongAnswer")
+        }
+    });
+
+    $("input[name='questionnumber4']").click(function () {
+        var selectedValue = $("input[name='questionnumber4']:checked").val();
+        if (selectedValue === "1") {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            correct++;
+            correctSpan.textContent = correct;
+            console.log(selectedValue)
+        }
+
+        else {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            wrong++
+            wrongSpan.textContent = wrong;
+            console.log("wrongAnswer")
+        }
+
+    });
+
+    $("input[name='questionnumber5']").click(function () {
+        var selectedValue = $("input[name='questionnumber5']:checked").val();
+        if (selectedValue === "1") {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            correct++;
+            correctSpan.textContent = correct;
+            console.log(selectedValue)
+        }
+
+        else {
+            unanswered--;
+            unansweredSpan.textContent = unanswered;
+            wrong++
+            wrongSpan.textContent = wrong;
+            console.log("wrongAnswer")
+        }
+
+    });
+
+  
 
 
 
