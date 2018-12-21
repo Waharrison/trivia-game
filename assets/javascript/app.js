@@ -5,7 +5,7 @@ var wrong = 0;
 var wrongSpan = document.getElementById("wrong");
 var unanswered = 5;
 var unansweredSpan = document.getElementById("unanswered")
-var number = 30;
+var number = 20;
 var intervalId;
 
 
